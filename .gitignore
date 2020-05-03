@@ -1,0 +1,19 @@
+# IDE
+.idea/
+
+# node && npm
+node_modules/
+package-lock.json
+
+# builds and temporaries
+dist/
+coverage/
+*.bak
+__*
+
+# local info, not for repo
+stats.json
+readme.txt
+
+# local utils tails
+.eslintcache

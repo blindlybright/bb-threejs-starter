@@ -1,0 +1,97 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "es2017": true
+    },
+    "extends": [
+        "eslint:recommended",
+//        "plugin:react/recommended",
+        "plugin:promise/recommended",
+        "plugin:sonarjs/recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module",
+        "project": "tsconfig.json",
+        "tsconfigRootDir": "."
+    },
+    "plugins": [
+//        "react",
+//        "react-hooks",
+        "promise",
+        "optimize-regex",
+        "sonarjs",
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "comma-dangle": ["error", "always-multiline"],
+        "eol-last": "error",
+        "indent": ["error", 4, { "SwitchCase": 1 }],
+        "linebreak-style": ["error", "windows"],
+        "prefer-promise-reject-errors": "error",
+        "prefer-arrow-callback": "warn",
+        "no-cond-assign": ["error", "always"],
+        "no-console": "off",
+        "no-duplicate-imports": ["error", { "includeExports": true }],
+        "no-return-await": "error",
+        "no-self-compare": "error",
+        "no-tabs": ["error", { "allowIndentationTabs": true }],
+        "no-trailing-spaces": "error",
+        "no-undefined": "error",
+        "no-unneeded-ternary": "error",
+        "quotes": ["error", "single"],
+        "semi": ["error", "always"],
+        "space-in-parens": "error",
+
+
+        "@typescript-eslint/member-delimiter-style": ["error", { "multiline": { "delimiter": "none" } }],
+//        "@typescript-eslint/no-magic-numbers": [
+//            "error",
+//            {
+//                "ignoreNumericLiteralTypes": true,
+//                "ignoreEnums": true,
+//                "enforceConst": true,
+//                "ignoreReadonlyClassProperties": true,
+//                "ignore": [0, 1, -1, 24, 60, 1000]
+//            }
+//        ],
+        "@typescript-eslint/no-useless-constructor": "error",
+        "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_", "varsIgnorePattern": "^_$" }],
+
+
+        "optimize-regex/optimize-regex": "warn",
+
+
+        "promise/prefer-await-to-then": "error",
+
+
+//        "react-hooks/exhaustive-deps": "warn",
+////        "react/no-access-state-in-setstate": "error",
+//        "react/no-this-in-sfc": "error",
+//        "react/prefer-stateless-function": "error",
+////        "react-hooks/rules-of-hooks": "error"
+
+        "sonarjs/no-duplicate-string": "off"
+
+// https://gist.github.com/BoresXP/e404f16a0e153eeb6ce15ce06848f36e
+// https://habr.com/ru/company/dodopizzadev/blog/473648/
+    },
+    "settings": {
+//        "react": {
+//            "pragma": "React",
+//            "version": "detect"
+//        }
+    }
+}

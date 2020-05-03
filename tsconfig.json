@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "module": "esnext",
+    "target": "es5",
+    "jsx": "react",
+    "lib": [
+      "es6",
+      "dom",
+      "es2015.promise",
+      "es2015.collection"
+    ],
+    "moduleResolution": "node",
+    "allowJs": true,
+    "rootDir": "./src/",
+    "importHelpers": true
+  },
+  "exclude": [
+    "node_modules",
+    "bower_components",
+    "__**/*",
+    "specs.js",
+    "./src/*.spec.ts",
+    "./src/**/*.spec.ts"
+  ]
+}

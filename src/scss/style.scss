@@ -1,0 +1,14 @@
+@import '~normalize.css/normalize.css';
+
+body {
+  madgin: 0;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+
+  canvas {
+    display: block;
+  }
+}
